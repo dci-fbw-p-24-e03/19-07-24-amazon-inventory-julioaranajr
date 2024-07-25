@@ -1,6 +1,3 @@
-
----
-
 # Warehouse Inventory Management System
 
 This Python project simulates a warehouse inventory management system similar to Amazon's warehouse. It allows users to add, remove, update items, generate fake data using Faker, and save/load data to/from a CSV file.
@@ -8,12 +5,14 @@ This Python project simulates a warehouse inventory management system similar to
 ## Features
 
 - **Add Item**: Add a new item to the inventory.
+- **Search for an Item**: Search for an item by name.
 - **Remove Item**: Remove an item from the inventory.
 - **Update Item**: Update the quantity, expiration date, or price of an existing item.
 - **View All Items**: Display all items currently in the inventory.
 - **Sort Items by Expiration Date**: Sort and display items based on their expiration dates.
 - **Generate Fake Data**: Automatically generate fake inventory data using Faker.
 - **Save/Load Data**: Data is saved and loaded from a CSV file (`warehouse_inventory.csv`).
+- **Export Full Report to PDF**: Export the full inventory report to a PDF file.
 
 ## Dependencies
 
@@ -29,19 +28,18 @@ This Python project simulates a warehouse inventory management system similar to
    cd <repository_name>
    ```
 
-
 ## Usage
 
-1. **Generate Fake Data**: Run `generate_fake_data.py` to populate `warehouse_inventory.csv` with fake data.
+1. **Generate Fake Data**: Run `data_faker.py` to populate `warehouse_inventory.csv` with fake data.
 
    ```bash
-   python generate_fake_data.py
+   python data_faker.py
    ```
 
 2. **Run the Warehouse Management System**:
 
    ```bash
-   python main_project.py
+   python main.py
    ```
 
 3. Follow the on-screen instructions to interact with the system:
@@ -54,19 +52,21 @@ This Python project simulates a warehouse inventory management system similar to
 Here's an example of how to add an item using the command line interface:
 
 ```bash
-$ python main_project.py
+$ python main.py
 
 Warehouse Inventory Management
+
 1. Add Item
 2. Remove Item
 3. Update Item
 4. View All Items
-5. Sort Items by Expiration Date
-6. Get Full Report
-7. Get Expired Items
-8. Search for an Item
-9. Exit
-Choose an option: 1
+5. Get Full Report
+6. Get Expired Items
+7. Search for an Item
+8. Export Full Report to PDF
+q. Exit
+
+Choose an option: 
 
 Enter item name: Laptop
 Enter quantity: 10
@@ -82,7 +82,7 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ---
 
-### Notes:
+### Notes
 
 - Replace `<repository_url>` and `<repository_name>` with your actual repository URL and name.
 - Ensure to update the example with relevant command outputs and interactions based on your project's functionality.
